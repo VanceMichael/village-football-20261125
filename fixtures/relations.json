@@ -1,0 +1,38 @@
+[
+  {
+    "table": "registrations",
+    "field": "player",
+    "target": "players",
+    "nullable": false
+  },
+  {
+    "table": "registrations",
+    "field": "team",
+    "target": "teams",
+    "nullable": false
+  },
+  {
+    "table": "registrations",
+    "field": "proof",
+    "target": "proofs",
+    "nullable": false
+  },
+  {
+    "table": "proofs",
+    "field": "player",
+    "target": "players",
+    "nullable": false
+  },
+  {
+    "table": "refereeDrafts",
+    "field": "match",
+    "target": "matches",
+    "nullable": false
+  },
+  {
+    "table": "refereeDrafts",
+    "field": "player",
+    "target": "players",
+    "nullable": false
+  }
+]

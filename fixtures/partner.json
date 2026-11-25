@@ -1,0 +1,14 @@
+{
+  "name": "身份核验登记处",
+  "path": "/registry/checks",
+  "lookup": "/registry/checks/",
+  "id": "checkId",
+  "group": "checks",
+  "key": "X-Request-Key",
+  "modes": [
+    "accepted",
+    "rejected",
+    "accepted_disconnect",
+    "pending"
+  ]
+}

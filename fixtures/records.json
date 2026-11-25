@@ -1,0 +1,246 @@
+{
+  "teams": [
+    {
+      "id": "T-A",
+      "region": "R-A"
+    },
+    {
+      "id": "T-B",
+      "region": "R-B"
+    },
+    {
+      "id": "T-C",
+      "region": "R-A"
+    },
+    {
+      "id": "T-D",
+      "region": "R-B"
+    }
+  ],
+  "players": [
+    {
+      "id": "P-1",
+      "name": "林川"
+    },
+    {
+      "id": "P-2",
+      "name": "林川"
+    },
+    {
+      "id": "P-3",
+      "name": "余舟"
+    },
+    {
+      "id": "P-4",
+      "name": "夏青"
+    },
+    {
+      "id": "P-10",
+      "name": "合成球员10"
+    },
+    {
+      "id": "P-11",
+      "name": "合成球员11"
+    },
+    {
+      "id": "P-12",
+      "name": "合成球员12"
+    },
+    {
+      "id": "P-13",
+      "name": "合成球员13"
+    }
+  ],
+  "registrations": [
+    {
+      "id": "RG-1",
+      "player": "P-1",
+      "team": "T-A",
+      "proof": "PR-1"
+    },
+    {
+      "id": "RG-2",
+      "player": "P-2",
+      "team": "T-B",
+      "proof": "PR-2"
+    },
+    {
+      "id": "RG-3",
+      "player": "P-3",
+      "team": "T-C",
+      "proof": "PR-3"
+    },
+    {
+      "id": "RG-10",
+      "player": "P-10",
+      "team": "T-A",
+      "proof": "PR-10"
+    },
+    {
+      "id": "RG-11",
+      "player": "P-11",
+      "team": "T-B",
+      "proof": "PR-11"
+    },
+    {
+      "id": "RG-12",
+      "player": "P-12",
+      "team": "T-C",
+      "proof": "PR-12"
+    },
+    {
+      "id": "RG-13",
+      "player": "P-13",
+      "team": "T-D",
+      "proof": "PR-13"
+    }
+  ],
+  "proofs": [
+    {
+      "id": "PR-1",
+      "player": "P-1",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "PR-2",
+      "player": "P-2",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "PR-3",
+      "player": "P-3",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "PR-10",
+      "player": "P-10",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "PR-11",
+      "player": "P-11",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "PR-12",
+      "player": "P-12",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    },
+    {
+      "id": "PR-13",
+      "player": "P-13",
+      "validFrom": "2026-01-01",
+      "until": "2026-12-31"
+    }
+  ],
+  "matches": [
+    {
+      "id": "G-1",
+      "home": "T-A",
+      "away": "T-B",
+      "startsAt": "2026-12-01T08:00:00Z"
+    },
+    {
+      "id": "G-2",
+      "home": "T-C",
+      "away": "T-D",
+      "startsAt": "2026-12-01T10:00:00Z"
+    },
+    {
+      "id": "G-3",
+      "homeWinnerOf": "G-1",
+      "awayWinnerOf": "G-2",
+      "startsAt": "2026-12-03T08:00:00Z"
+    }
+  ],
+  "rules": {
+    "season": "S-26",
+    "yellowThreshold": 3,
+    "directRedMatches": 2,
+    "doubleYellowMatches": 1,
+    "appealMinutes": 1440
+  },
+  "refereeDrafts": [
+    {
+      "id": "E-1",
+      "match": "G-1",
+      "player": "P-1",
+      "kind": "yellow",
+      "minute": 12
+    },
+    {
+      "id": "E-2",
+      "match": "G-1",
+      "player": "P-1",
+      "kind": "red",
+      "minute": 60
+    }
+  ],
+  "actors": [
+    {
+      "id": "coach-a",
+      "role": "team",
+      "team": "T-A"
+    },
+    {
+      "id": "review-a",
+      "role": "region",
+      "region": "R-A"
+    },
+    {
+      "id": "review-b",
+      "role": "region",
+      "region": "R-B"
+    },
+    {
+      "id": "ref-a",
+      "role": "referee"
+    },
+    {
+      "id": "board",
+      "role": "competition"
+    }
+  ],
+  "sourceChanges": [
+    {
+      "id": "TRANSFER",
+      "player": "P-1",
+      "fromTeam": "T-A",
+      "toTeam": "T-C",
+      "requestedAt": "2026-12-01T09:00:00Z"
+    },
+    {
+      "id": "RESULT-1",
+      "match": "G-1",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "id": "CARD-LATE",
+      "match": "G-1",
+      "player": "P-1",
+      "kind": "red",
+      "minute": 60,
+      "recordedAt": "2026-12-03T07:45:00Z"
+    },
+    {
+      "id": "APPEAL-1",
+      "match": "G-1",
+      "team": "T-B",
+      "reason": "球员资格材料需复核",
+      "submittedAt": "2026-12-02T07:00:00Z"
+    },
+    {
+      "id": "PROOF-CHANGE",
+      "proof": "PR-1",
+      "validUntil": "2026-11-30",
+      "reason": "合成资料有效期更正"
+    }
+  ]
+}
