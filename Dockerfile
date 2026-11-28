@@ -3,5 +3,5 @@ WORKDIR /app
 COPY --chown=node:node . .
 RUN mkdir -p /app/.local && chown node:node /app/.local
 USER node
-EXPOSE 4317
-CMD ["npm", "run", "start:partner"]
+EXPOSE 4317 4318
+CMD ["npm", "run", "start:app"]

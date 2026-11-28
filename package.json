@@ -7,8 +7,11 @@
     "node": "22.23.4"
   },
   "scripts": {
+    "start": "node app.mjs",
+    "start:app": "node app.mjs",
     "start:partner": "node support/peer.mjs",
-    "build": "node --check support/peer.mjs && node --check tests/partner.test.mjs",
+    "demo": "node scripts/demo.mjs",
+    "build": "node --check app.mjs && node --check src/store.mjs && node --check src/seed.mjs && node --check src/domain.mjs && node --check src/server.mjs && node --check scripts/demo.mjs && node --check support/peer.mjs && node --check tests/app.test.mjs && node --check tests/partner.test.mjs",
     "test": "node --test tests/*.test.mjs"
   }
 }
